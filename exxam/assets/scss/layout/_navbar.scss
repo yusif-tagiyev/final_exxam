@@ -1,0 +1,192 @@
+nav {
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  width: 100%;
+  height: 100vh;
+
+  .villa {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    padding: 100px 40px 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    #iconsDiv {
+      i {
+        font-size: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+  .welcomeToVilla {
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .resort {
+      font-size: 82px;
+      color: rgb(179, 171, 171);
+    }
+    .discover {
+      font-size: 32px;
+      color: rgb(179, 171, 171);
+    }
+    .buttonDiv {
+      display: flex;
+      gap: 10px;
+      padding-top: 42px;
+      #explorerBtn {
+        width: 200px;
+        height: 48px;
+        border: none;
+        border-radius: 32px;
+        background-color: rgb(160, 24, 201);
+        color: white;
+      }
+      #download {
+        width: 150px;
+        height: 48px;
+        border: 1px solid black;
+        border-radius: 32px;
+        background-color: transparent;
+        color: black;
+        &:hover {
+          background-color: white;
+          border: white;
+        }
+      }
+    }
+  }
+  .animationMenu {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    background-color: white;
+    overflow: scroll;
+    border: 1px solid black;
+    &.hidenNav {
+      position: fixed;
+      transition: 1s;
+      opacity: 1;
+    }
+    &.hiddenNavRemove{
+        opacity: 0;
+        transition: 1s;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #closeBtn {
+      position: absolute;
+      top: 67px;
+      right: 38px;
+      font-size: 42px;
+    }
+    .home {
+      width: 50%;
+      height: 120vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li {
+          div {
+            width: 0;
+            &:hover {
+              background-color: red;
+              transition: 2s;
+              width: 150px;
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 32px;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .contactAndConnectDiv {
+      display: flex;
+      gap: 20px;
+      .contactInfo {
+        ul {
+          li {
+            color: rgb(82, 82, 82);
+            a {
+              text-decoration: none;
+              color: rgb(82, 82, 82);
+            }
+          }
+        }
+      }
+      .connectInfo {
+        ul {
+          li {
+            a {
+              text-decoration: none;
+              color: rgb(82, 82, 82);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    .welcomeToVilla {
+      .resort {
+        font-size: 40px;
+        text-align: center;
+      }
+      .discover {
+        font-size: 16px;
+        text-align: center;
+      }
+      .buttonDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        #explorerBtn {
+          width: 100%;
+        }
+        #download {
+          width: 100%;
+        }
+      }
+    }
+    .animationMenu {
+      display: flex;
+      flex-direction: column;
+      .home {
+        display: flex;
+        flex-direction: row;
+        ul {
+          li {
+            div {
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .contactAndConnectDiv {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

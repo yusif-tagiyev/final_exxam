@@ -1,0 +1,40 @@
+{
+  "myIpa": [
+    {
+      "id": 1,
+      "title": "Food and wiiner",
+      "reviews": "2344,5 reviews",
+      "img_link": "https://preview.colorlib.com/theme/villa/img/slider-4.jpg.webp"
+    },
+    {
+      "id": 2,
+      "title": "Food and spa",
+      "reviews": "944,5 reviews",
+      "img_link": "https://preview.colorlib.com/theme/villa/img/img_1.jpg.webp"
+    },
+    {
+      "id": 3,
+      "title": "hotel Room",
+      "reviews": "2344,5 reviews",
+      "img_link": "https://preview.colorlib.com/theme/villa/img/slider-3.jpg.webp"
+    },
+    {
+      "id": 4,
+      "title": "Your Club",
+      "reviews": "267904,5 reviews",
+      "img_link": "https://preview.colorlib.com/theme/villa/img/img_1.jpg.webp"
+    },
+    {
+      "title": "soradan gelen",
+      "reviews": "linkdi",
+      "img_link": "httpsghgtaui",
+      "id": 5
+    },
+    {
+      "title": "wdqd",
+      "reviews": "asd",
+      "img_link": "asd",
+      "id": 6
+    }
+  ]
+}

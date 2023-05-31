@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  width: 100%;
+  height: 100vh;
+}
+nav .villa {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  padding: 100px 40px 0px 40px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+nav .villa #iconsDiv i {
+  font-size: 32px;
+  cursor: pointer;
+}
+nav .welcomeToVilla {
+  width: 100%;
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .welcomeToVilla .resort {
+  font-size: 82px;
+  color: rgb(179, 171, 171);
+}
+nav .welcomeToVilla .discover {
+  font-size: 32px;
+  color: rgb(179, 171, 171);
+}
+nav .welcomeToVilla .buttonDiv {
+  display: flex;
+  gap: 10px;
+  padding-top: 42px;
+}
+nav .welcomeToVilla .buttonDiv #explorerBtn {
+  width: 200px;
+  height: 48px;
+  border: none;
+  border-radius: 32px;
+  background-color: rgb(160, 24, 201);
+  color: white;
+}
+nav .welcomeToVilla .buttonDiv #download {
+  width: 150px;
+  height: 48px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: transparent;
+  color: black;
+}
+nav .welcomeToVilla .buttonDiv #download:hover {
+  background-color: white;
+  border: white;
+}
+nav .animationMenu {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  background-color: white;
+  overflow: scroll;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .animationMenu.hidenNav {
+  position: fixed;
+  transition: 1s;
+  opacity: 1;
+}
+nav .animationMenu.hiddenNavRemove {
+  opacity: 0;
+  transition: 1s;
+}
+nav .animationMenu #closeBtn {
+  position: absolute;
+  top: 67px;
+  right: 38px;
+  font-size: 42px;
+}
+nav .animationMenu .home {
+  width: 50%;
+  height: 120vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav .animationMenu .home ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+nav .animationMenu .home ul li div {
+  width: 0;
+}
+nav .animationMenu .home ul li div:hover {
+  background-color: red;
+  transition: 2s;
+  width: 150px;
+}
+nav .animationMenu .home ul li div a {
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+}
+nav .animationMenu .contactAndConnectDiv {
+  display: flex;
+  gap: 20px;
+}
+nav .animationMenu .contactAndConnectDiv .contactInfo ul li {
+  color: rgb(82, 82, 82);
+}
+nav .animationMenu .contactAndConnectDiv .contactInfo ul li a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+}
+nav .animationMenu .contactAndConnectDiv .connectInfo ul li a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+}
+
+@media only screen and (max-width: 768px) {
+  nav .welcomeToVilla .resort {
+    font-size: 40px;
+    text-align: center;
+  }
+  nav .welcomeToVilla .discover {
+    font-size: 16px;
+    text-align: center;
+  }
+  nav .welcomeToVilla .buttonDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav .welcomeToVilla .buttonDiv #explorerBtn {
+    width: 100%;
+  }
+  nav .welcomeToVilla .buttonDiv #download {
+    width: 100%;
+  }
+  nav .animationMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .animationMenu .home {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .animationMenu .home ul li div a {
+    font-size: 16px;
+  }
+  nav .animationMenu .contactAndConnectDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #visit {
+  width: 100%;
+}
+main #visit .mainDivForVisit {
+  padding-top: 200px;
+}
+main #visit .mainDivForVisit h1 {
+  font-size: 24px;
+  color: rgb(180, 180, 180);
+}
+main #visit #restaurantVisitInfoCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+main #visit #restaurantVisitInfoCards .staticDiv {
+  width: 23%;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .imgDiv {
+  width: 100%;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .imgDiv img {
+  width: 100%;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .headerInfo {
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .iconAndReviewsDiv {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .iconAndReviewsDiv .starIconsDiv {
+  color: red;
+}
+main #visit #restaurantVisitInfoCards .staticDiv .iconAndReviewsDiv .reviews {
+  opacity: 0.7;
+}
+@media only screen and (max-width: 768px) {
+  main #restaurantVisitInfoCards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main #restaurantVisitInfoCards .staticDiv {
+    width: 100% !important;
+  }
+  main #restaurantVisitInfoCards .staticDiv .imgDiv img {
+    width: 100%;
+  }
+}
+main #gorgeousPlace .mainDivForgorgeousPlace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+main #gorgeousPlace .mainDivForgorgeousPlace .gorgeous {
+  width: 700px;
+  text-align: center;
+  font-size: 72px;
+}
+main #gorgeousPlace .mainDivForgorgeousPlace .gorgeousInfoText {
+  padding-top: 30px;
+  width: 870px;
+  font-size: 22px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  main #gorgeousPlace .mainDivForgorgeousPlace .gorgeous {
+    width: auto;
+    font-size: 40px;
+  }
+  main #gorgeousPlace .mainDivForgorgeousPlace .gorgeousInfoText {
+    width: auto;
+    font-size: 16px;
+  }
+}
+main #recentBlog .mainDivForRecentBlog {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #recentBlog .mainDivForRecentBlog .blogPost {
+  font-size: 72px;
+}
+main #recentBlog .mainDivForRecentBlog .blogPostInfoText {
+  font-size: 22px;
+  width: 850px;
+  text-align: center;
+}
+main #recentBlog .mainDivForRecentBlog .restaurantCard {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo {
+  width: 33.33%;
+}
+main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo .restaurantInfo_imgDiv img {
+  width: 100%;
+}
+main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo .date {
+  padding-top: 10px;
+  padding-left: 30px;
+  opacity: 0.6;
+}
+main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo .restaurantLocation {
+  padding-left: 30px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  main #recentBlog .mainDivForRecentBlog .blogPost {
+    font-size: 40px;
+  }
+  main #recentBlog .mainDivForRecentBlog .blogPostInfoText {
+    font-size: 16px;
+    width: auto;
+  }
+  main #recentBlog .mainDivForRecentBlog .restaurantCard {
+    display: flex;
+    flex-direction: column;
+  }
+  main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo {
+    width: 100%;
+  }
+  main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo .date {
+    padding-left: 10px;
+  }
+  main #recentBlog .mainDivForRecentBlog .restaurantCard .restaurantInfo .restaurantLocation {
+    padding-left: 10px;
+  }
+}
+main #postSection {
+  width: 100%;
+  padding-top: 20px;
+}
+main #postSection div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 180px;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+footer .line {
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+  background-color: white;
+}
+footer .copyright {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright p {
+  color: rgb(158, 158, 158);
+}
+footer .copyright .footerIconDiv {
+  display: flex;
+  gap: 15px;
+  color: rgb(158, 158, 158);
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: auto;
+  }
+  footer .copyright {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
